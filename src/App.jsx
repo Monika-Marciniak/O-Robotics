@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Menu from "./Menu";
+import Menu from "./Components/Menu";
 
 function App() {
   return (
