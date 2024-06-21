@@ -1,0 +1,137 @@
+   /* Menu.css */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  .menu_item {
+    font-size: 20px;
+    margin-right: 45px;
+    color: white;
+    text-decoration: none;
+ 
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu_item:hover {
+    background-color: #555;
+    padding: 10px 0;
+    color: yellow;
+  }
+  
+  
+  .product,
+  .about {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    padding: 10px;
+    list-style-type: none;
+
+  }
+  
+  .product .item-product,
+  .about .item-about {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+  }
+  
+  .product .item-product:hover,
+  .about .item-about:hover {
+    background-color: #504f4f;
+    color: yellow;
+  
+  }
+  
+  .product_menu_item:hover .product {
+    display: block;
+    left: 110px;
+  }
+  
+  .about_menu_item:hover .about {
+    display: block;
+    left: 200px;
+  }
+  
+  /* 
+  .product {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 999;
+    white-space: nowrap;
+  }
+  
+  .about {
+    left: 200px;
+    position: absolute;
+    top: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 999;
+    white-space: nowrap;
+  }
+  
+  .submenu_item {
+    color: white;
+  }
+  
+  
+  .submenu_item:hover {
+    color: yellow;
+  }
+  
+  .submenu .about_submenu {
+    left: 100%;
+    top: 0;
+  }
+  
+  .submenu.about_submenu .item-about {
+    padding: 5px 10px;
+  }
+  
+  .submenu.about_submenu .item-about:hover {
+    background-color: #444;
+    color: yellow;
+  } */
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu_item {
+      margin: 10px 10px;
+    }
+  
+    .search_form {
+      width: 100%;
+    }
+  
+    .search_input {
+      width: calc(100% - 80px);
+      margin-right: 10px;
+    }
+  
+    .search_button {
+      width: 70px;
+    }
+  }
